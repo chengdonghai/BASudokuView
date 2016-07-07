@@ -3,14 +3,14 @@
 
 ![GIF演示](jiaocheng.gif)
 
-####有三种布局模式：
+####支持三种布局模式：
 1. 左右按页滚动，并支持页面重用
 2. 上下滚动
 3. 左右滚动
 
 ####在回调代理里可以设置每个格子的宽度和高度以及它们之间的间距，左边距、右边剧、上边距、下边距以及pageControl的样式等
 
-``` objc
+```objc
 //设置格子的个数
 -(NSInteger)numberOfGridViewInSudokuView:(BASudokuView *)sudokuView
 {
