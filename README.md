@@ -7,6 +7,23 @@
 1. 左右按页滚动，并支持页面重用
 2. 上下滚动
 3. 左右滚动
+####创建视图并设置代理和布局模式
+```objc
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.sudokuView.delegate = self;
+    self.sudokuView.dataSource = self;
+    self.sudokuView.pageMode = self.pageMode;
+    self.sudokuView.accessMode = self.accessMode;
+    
+    [self.view addSubview:self.sudokuView];
+    
+	// Do any additional setup after loading the view.
+}
+
+```
 
 ####在回调代理里可以设置每个格子的宽度和高度以及它们之间的间距，左边距、右边剧、上边距、下边距以及pageControl的样式等
 
