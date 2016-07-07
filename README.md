@@ -1,13 +1,14 @@
 # BASudokuView
-##这是什么
-####这是个九宫格布局视图，如下图：
-<iframe height=500 width=500 src="http://7xuj23.com1.z0.glb.clouddn.com/2016-07-07%2011_17_48.gif">
+####这是个九宫格布局视图，如下:
 
-#####有三种布局模式：
+![GIF演示](http://7xuj23.com1.z0.glb.clouddn.com/2016-07-07_11_51_36.gif)
+
+####有三种布局模式：
 1. 左右按页滚动，并支持页面重用
 2. 上下滚动
 3. 左右滚动
-#####在回调代理里可以设置每个格子的宽度和高度以及它们之间的间距，左边距、右边剧、上边距、下边距以及pageControl的样式等
+
+####在回调代理里可以设置每个格子的宽度和高度以及它们之间的间距，左边距、右边剧、上边距、下边距以及pageControl的样式等
 
 ``` objc
 //设置格子的个数
@@ -16,7 +17,7 @@
     return 9;
     
 }
-//设置最大列书
+//设置最大列数
 -(NSInteger)numberOfMaxColumnInSudokuView:(BASudokuView *)sudokuView
 {
     if (self.pageMode == BASudokuViewPageModeHorizontalNoPaging) {
@@ -119,5 +120,5 @@
 }
 
 ```
-#####详细代码请下载demo
+####详细代码请下载demo
 
