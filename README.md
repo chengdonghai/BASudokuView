@@ -17,7 +17,7 @@
     return 9;
     
 }
-//设置最大列书
+//设置最大列数
 -(NSInteger)numberOfMaxColumnInSudokuView:(BASudokuView *)sudokuView
 {
     if (self.pageMode == BASudokuViewPageModeHorizontalNoPaging) {
