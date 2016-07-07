@@ -10,6 +10,15 @@
 
 ####创建视图并设置代理和布局模式
 ```objc
+-(BASudokuView *)sudokuView
+{
+    if (_sudokuView == nil) {
+        _sudokuView = [[BASudokuView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), self.sudoKuViewHeight)];
+        _sudokuView.backgroundColor =[UIColor lightGrayColor];
+    }
+    return _sudokuView;
+    
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
