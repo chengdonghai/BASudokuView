@@ -1,7 +1,6 @@
 # BASudokuView
-##这是什么
 ####这是个九宫格布局视图，如下：
-![](http://7xuj23.com1.z0.glb.clouddn.com/2016-07-07%2011_17_48.gif)
+![](http://7xuj23.com1.z0.glb.clouddn.com/2016-07-07%2011_51_36.gif)
 
 ####有三种布局模式：
 1. 左右按页滚动，并支持页面重用
